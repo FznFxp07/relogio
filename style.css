@@ -4,15 +4,29 @@ body, html {
   overflow: hidden;
   background: #1b1b1b;
   font-family: 'Arial', sans-serif;
-  height: 100%;
-  position: relative;
 }
 
-#clock {
+#clock-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Move o relógio para o centro exato */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}
+
+#love-text {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  background: rgba(255, 0, 100, 0.2);
+  padding: 10px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff007f;
+  margin-bottom: 10px;
+}
+
+#clock {
   font-size: 32px;
   font-weight: bold;
   color: #ffffff;
@@ -20,41 +34,8 @@ body, html {
   padding: 10px 25px;
   border-radius: 12px;
   box-shadow: 0 0 10px #ff007f;
-  z-index: 10;
-  text-align: center;
-}
-
-
-#message {
-  position: absolute;
-  bottom: 50px;  /* Aqui você pode modificar para posições aleatórias depois no JS */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 28px;
-  color: #ff80c0;
-  font-weight: bold;
-  white-space: nowrap;
-  opacity: 0;
-  z-index: 5;
-  text-shadow: 0 0 10px #ff80c0;
-  animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%) translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
 }
 
 canvas {
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Garante que o canvas fique atrás dos outros elementos */
 }
