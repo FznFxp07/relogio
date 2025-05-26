@@ -48,7 +48,7 @@ function Heart(x, y, size, speed) {
 }
 
 function animateHearts() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpa o canvas
+  ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpa o canvas.
 
   // Cria um gradiente linear com cores pastéis
   let gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
