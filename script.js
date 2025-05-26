@@ -52,7 +52,7 @@ function animateHearts() {
 
   // Cria um gradiente linear com cores pastéis
   let gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-  
+
   // Cores pastéis
   gradient.addColorStop(0, '#FFB6C1');  // Rosa claro
   gradient.addColorStop(0.5, '#ADD8E6');  // Azul bebê
@@ -71,7 +71,6 @@ function animateHearts() {
 
   requestAnimationFrame(animateHearts);
 }
-
 
 canvas.addEventListener('click', (e) => {
   for (let i = 0; i < 10; i++) {
@@ -123,7 +122,7 @@ const COLORS = [
   '#ADD8E6', // Azul bebê
   '#D8BFD8', // Lavanda (roxo claro)
   '#98FB98', // Verde claro
-
+  
   '#FFD700', // Ouro
   '#FF6347'  // Tomate
 ];
