@@ -23,7 +23,7 @@ body, html {
   padding: 10px 25px;
   border-radius: 12px;
   box-shadow: 0 0 10px #ff007f;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 #clock {
@@ -36,6 +36,29 @@ body, html {
   box-shadow: 0 0 10px #ff007f;
 }
 
+#message {
+  position: absolute;
+  font-size: 24px;
+  color: #ff80c0;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 5;
+  text-shadow: 0 0 10px #ff80c0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
 canvas {
   display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
