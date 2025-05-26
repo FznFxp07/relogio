@@ -119,11 +119,12 @@ const MENSAGENS = [
 // Array de cores para as mensagens
 const COLORS = [
   '#FFB6C1', // Rosa claro
-  '#ADD8E6', // Azul bebê
+  '#D8BFD8', // Lilás claro
   '#D8BFD8', // Lavanda (roxo claro)
-  '#98FB98', // Verde claro
-  '#FFD700', // Ouro
-  '#FF6347'  // Tomate
+  '#FFB6C1', // Rosa pastel
+  '#F9E4A3', // Pudim (Yellow Beige) 
+  'FAD0C5', /* Rosa Claro Quente */
+  'F4C2C2', /* Rosa Mágico */
 ];
 
 // Função para pegar uma mensagem aleatória
