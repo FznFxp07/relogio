@@ -120,7 +120,7 @@ const MENSAGENS = [
 const COLORS = [
   '#FFB6C1',  //Rosa Claro (Light Pink)
 
-  '#FFD1DC', // Rosa Pastel
+  
 
   '#DC143C', // Vermelho Apaixonado (Crimson)
 
