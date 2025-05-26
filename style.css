@@ -1,0 +1,58 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #1b1b1b; /* Fundo escuro */
+  font-family: 'Arial', sans-serif;
+  height: 100%; /* Garante que o body tenha altura 100% */
+}
+
+#clock {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(255, 0, 100, 0.2);
+  padding: 10px 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff007f;
+  z-index: 10;
+  text-align: center;
+}
+
+#message {
+  position: absolute;
+  bottom: 50px;  /* Aqui você pode modificar para posições aleatórias depois no JS */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 28px;
+  color: #ff80c0;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  z-index: 5;
+  text-shadow: 0 0 10px #ff80c0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Garante que o canvas fique atrás dos outros elementos */
+}
