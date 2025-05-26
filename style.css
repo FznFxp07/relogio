@@ -22,12 +22,12 @@ body, html {
 
 #love-text {
   margin-right: 10px;
-  color: #FF0000;  /* Texto "Eu te amo" em vermelho puro */
+  color: #FFB6C1;  /* Rosa pastel suave para o texto "Eu te amo" */
 }
 
 #clock {
   font-size: 40px;
-  background: #333333;  /* Alterei para um fundo escuro para contraste */
+  background: #ADD8E6;  /* Azul bebê pastel para a caixa do relógio */
   padding: 10px 25px;
   border-radius: 12px;
   box-shadow: 0 0 10px #ff007f;
