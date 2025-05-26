@@ -113,7 +113,8 @@ const MENSAGENS = [
   "Amar você é minha melhor escolha.",
   "Eu te amo mais do que ontem e vou amar muito mais amanhã.",
   "Eu amo te amar, e essa é a melhor sensação do mundo.",
-  "Eu te amo minha florzinha de lírio."
+  "Eu te amo minha florzinha de lírio.",
+  "Eu te amo. Com a alma, com o coração e com o corpo."
 ];
 
 // Array de cores para as mensagens
