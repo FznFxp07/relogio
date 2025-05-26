@@ -57,7 +57,7 @@ function animateHearts() {
   gradient.addColorStop(0, '#FFB6C1');  // Rosa claro
   gradient.addColorStop(0.5, '#ADD8E6');  // Azul bebê
   gradient.addColorStop(1, '#D8BFD8');  // Lavanda (roxo claro)
-  gradient.addColorStop(0, '#FFDAB9'); //Pêssego pastel
+  gradient.addColorStop(0, '#FFDAB9'); // Pêssego pastel
 
   // Aplica o gradiente como cor de fundo
   ctx.fillStyle = gradient;
@@ -122,7 +122,6 @@ const COLORS = [
   '#ADD8E6', // Azul bebê
   '#D8BFD8', // Lavanda (roxo claro)
   '#98FB98', // Verde claro
-  
   '#FFD700', // Ouro
   '#FF6347'  // Tomate
 ];
