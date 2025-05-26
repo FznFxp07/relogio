@@ -23,6 +23,7 @@ body, html {
 #love-text {
   margin-right: 10px;
   color: #FFB6C1;  /* Rosa pastel suave para o texto "Eu te amo" */
+  font-size: 32px;
 }
 
 #clock {
