@@ -22,7 +22,7 @@ body, html {
 
 #love-text {
   margin-right: 10px;
-  color: #FFB6C1;  /* Rosa pastel suave para o texto "Eu te amo" */
+  color: #d82540;  /* Rosa pastel suave para o texto "Eu te amo" */
   font-size: 32px;
 }
 
@@ -31,8 +31,8 @@ body, html {
   background: #ADD8E6;  /* Azul bebê pastel para a caixa do relógio */
   padding: 15px 30px;  /* Aumenta o espaçamento interno da caixa */
   border-radius: 15px;  /* Bordas arredondadas mais suaves */
-  box-shadow: 0 0 15px rgba(6, 44, 168, 0.8);  /* Sombra suave azul bebê */
-  color: #974af0;  /* Cor do texto do relógio */
+  box-shadow: 0 0 15px rgba(53, 94, 230, 0.8);  /* Sombra suave azul bebê */
+  color: #e466d9;  /* Cor do texto do relógio */
   z-index: 10;
   font-family: 'Arial', sans-serif;
 }
