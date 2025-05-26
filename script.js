@@ -57,7 +57,7 @@ function animateHearts() {
   gradient.addColorStop(0, '#FFB6C1');  // Rosa claro
   gradient.addColorStop(0.5, '#ADD8E6');  // Azul bebê
   gradient.addColorStop(1, '#D8BFD8');  // Lavanda (roxo claro)
-  gradient.addColorStop(0.5, '#FFDAB9'); //Pêssego pastel
+  gradient.addColorStop(0, '#FFDAB9'); //Pêssego pastel
 
   // Aplica o gradiente como cor de fundo
   ctx.fillStyle = gradient;
@@ -98,9 +98,6 @@ function updateClock() {
 
   document.getElementById('clock').textContent =
     `${diffDays}d ${diffHours}h ${diffMinutes}m ${diffSeconds}s`;
-  
-  // Atualiza o texto "Eu te amo há" junto com o relógio
-  document.getElementById('love-text').textContent = `Eu te amo há ${diffDays}d ${diffHours}h ${diffMinutes}m ${diffSeconds}s`;
 }
 
 setInterval(updateClock, 1000);
@@ -115,13 +112,31 @@ const MENSAGENS = [
   "Amar você é minha melhor escolha.",
   "Eu te amo mais do que ontem e vou amar muito mais amanhã.",
   "Eu amo te amar, e essa é a melhor sensação do mundo.",
-  "Eu te amo minha florzinha de lírio."
+  "Eu te amo minha florzinha de lírio.",
+  "Eu te amo. Com a alma, com o coração e com o corpo."
+];
+
+// Array de cores para as mensagens
+const COLORS = [
+  '#FFB6C1', // Rosa claro
+  '#ADD8E6', // Azul bebê
+  '#D8BFD8', // Lavanda (roxo claro)
+  '#98FB98', // Verde claro
+  
+  '#FFD700', // Ouro
+  '#FF6347'  // Tomate
 ];
 
 // Função para pegar uma mensagem aleatória
 function getRandomMessage() {
   const randomIndex = Math.floor(Math.random() * MENSAGENS.length);
   return MENSAGENS[randomIndex];
+}
+
+// Função para pegar uma cor aleatória
+function getRandomColor() {
+  const randomColorIndex = Math.floor(Math.random() * COLORS.length);
+  return COLORS[randomColorIndex];
 }
 
 // Função para gerar posições aleatórias para as mensagens
