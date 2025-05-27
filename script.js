@@ -87,7 +87,7 @@ animateHearts();
 
 // ========== RELÓGIO PROGRESSIVO ==========
 function updateClock() {
-  const startDate = new Date("2025-01-21T00:00:00"); // Data de início
+  const startDate = new Date("2025-01-20T00:00:00"); // Data de início
   const now = new Date();
   const diffMs = now - startDate;
 
